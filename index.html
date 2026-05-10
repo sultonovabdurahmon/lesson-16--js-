@@ -4,6 +4,23 @@
     <title>JS Lessons</title>
 </head>
 <body>
-    <script src="js/script.js"></script>
+    <!--<script src="js/script.js"></script>-->
+    <script>
+
+        const hour = +prompt('Raqamro vorid kuned: ')
+
+        if (hour > 24) {
+            alert('Raqam <=24 bayni shavad');
+        }
+        if (hour >= 6 && hour < 12) {
+            console.log("Доброе утро!");
+        } else if (hour >= 12 && hour < 18) {
+            console.log("Добрый день!");
+        } else if (hour >= 18 && hour < 23) {
+            console.log("Добрый вечер!");
+        } else {
+            console.log("Добрый ночи!");
+        }  
+    </script>
 </body>
 </html>
